@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale=1" charset="utf-8">
+
+    <link rel="stylesheet" href="jquery.mobile-1.4.4.css">
+
+    <script src="jquery-1.11.1.js"></script>
+    <script src="jquery.mobile-1.4.4.js"></script>
+
+    <script type="text/javascript">
+    function cambiarPagina(page) {
+
+        switch (page) {
+            case "paginaRegistro":
+                $.mobile.changePage("#" + page, {
+                    transition: "slidedown"
+                });
+                break;
+            case "paginaConsulta":
+
+                $("#codigoB").val("");
+                $("#datos").html("");
+
+                $.mobile.changePage("#" + page, {
+                    transition: "slideup"
+                });
+                break;
+            case "paginaInicio":
+                $.mobile.changePage("#" + page, {
+                    transition: "flip"
+                });
+                break;
+
+        }
+
+
+    }
+
+    $(document).ready(function() {
+
+        var productos = [];
+
+
+
+        $("#boton1").click(function() {
+
+            var codigo = $("#codigo").val();
+            var nombre = $("#nombre").val();
+            var precio = $("#precio").val();
+
+
+            var producto = {
+                codigo: codigo,
+                nombre: nombre,
+                precio: precio
+            }
+
+            productos.push(producto);
+
+            alert("Producto Registrado!!")
+
+
+            limpiarCampos();
+
+
+
+        });
+
+
+        $("#boton2").click(function() {
+
+            var codigoB = $("#codigoB").val();
+            var datos = "----Producto----<br>";
+
+            for (var i = 0; i < productos.length; i++) {
+                if (codigoB == productos[i].codigo) {
+
+                    datos += "Codigo:" + productos[i].codigo + "<br>";
+                    datos += "Nombre:" + productos[i].nombre + "<br>";
+                    datos += "Precio:" + productos[i].precio + "<br>";
+
+                    $("#datos").html(datos);
+
+                    break;
+
+                }
+
+            };
+
+
+        });
+
+
+        function limpiarCampos() {
+
+            $("#codigo").val("");
+            $("#nombre").val("");
+            $("#precio").val("");
+        }
+
+
+
+
+    })
+    </script>
+
+    <body>
+        <div data-role="page" id="paginaInicio">
+            <div data-role="header">
+                <h1>Gestión Producto</h1>
+            </div>
+            <div data-role="content">
+                <form>
+
+                    <a onclick="cambiarPagina('paginaRegistro')" class="ui-btn">Registrar</a>
+                    <a onclick="cambiarPagina('paginaConsulta')" class="ui-btn">Consultar</a>
+
+                </form>
+            </div>
+            <div data-role="footer">
+                <p align="center">Gestión Producto</p>
+            </div>
+        </div>
+
+
+        <div data-role="page" id="paginaRegistro">
+            <div data-role="header">
+                <h1>Registro Producto</h1>
+            </div>
+            <div data-role="content">
+                <form>
+                    <div class="ui-field-contain">
+                        <label for="codigo">Codigo:</label>
+                        <input type="text" name="codigo" id="codigo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre">
+                        <label for="precio">Precio:</label>
+                        <input type="text" name="precio" id="precio">
+
+                    </div>
+                    <a id="boton1" class="ui-btn">Guardar</a>
+                    <a onclick="cambiarPagina('paginaInicio')" class="ui-btn">Volver</a>
+                </form>
+            </div>
+            <div data-role="footer">
+                <p align="center">Registro Producto</p>
+            </div>
+        </div>
+
+
+        <div data-role="page" id="paginaConsulta">
+            <div data-role="header">
+                <h1>Consulta Producto</h1>
+            </div>
+            <div data-role="content">
+                <form>
+                    <div class="ui-field-contain">
+                        <label for="codigoB">Codigo:</label>
+                        <input type="text" name="codigoB" id="codigoB">
+                        <h3 id="datos"></h3>
+                    </div>
+                    <a id="boton2" class="ui-btn">Consultar</a>
+                    <a onclick="cambiarPagina('paginaInicio')" class="ui-btn">Volver</a>
+                </form>
+            </div>
+            <div data-role="footer">
+                <p align="center">Consulta Producto</p>
+            </div>
+        </div>
+
+
+    </body>
+
+</html>

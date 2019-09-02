@@ -1,0 +1,541 @@
+/*               Customize Style                  */
+/* Version 2014-03-13 */
+/**************************************************/
+/*Cuerpo de la pagina*/
+body{
+	margin-left: 0px;
+	margin-top: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;	
+}
+.textoBody {
+	/*font: normal 12px Arial, Helvetica, sans-serif;*/
+        font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #5d5c60;
+        size: 12px;
+}
+/* Cabecera */
+
+
+.titSistema {
+	padding: 0 0 0 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+        font-style: oblique;
+        text-align: center;
+        //color:#06C; 
+        color: #2a6496;
+     }
+
+.titPregunta {
+	font: normal 13px Arial, Helvetica, sans-serif;
+	color: #7BC6FD;
+}
+
+.titSistemaHome {
+	color: #B3D9FF;
+	padding: 0 0 0 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.titBienvenidos {
+	font: normal 16px Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	padding: 0 0 0 40px;
+}
+
+.navegador {
+    font:bold 13px Geneva, Arial, Helvetica, sans-serif;
+    margin: auto;
+    width:380px;
+    padding:0 0 0 30px;
+    align:left;
+    text-transform:uppercase;
+    padding:5px 4px;
+    color:#06C;
+}
+.frmBoxTitle3 td p{
+    margin: auto;
+    font:bold 10px Geneva, Arial, Helvetica, sans-serif;
+    line-height:40px;
+    padding:5px 4px;
+    background-color:#CFE9FC;
+    color:black;
+}
+
+
+.titSistemaBold {
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+.usuario {
+	font: normal 12px Arial, Helvetica, sans-serif;
+	color: #5d5c60;
+}
+
+.fecha {
+	color: #676465;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+.tit2Sistema{
+	font:bold 15px Geneva, Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	padding:0 0 0 40px;
+	text-transform:uppercase;
+}
+
+.encabezado{
+	height: 100px;
+	padding-top: 20px;
+	padding-bottom: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#rgba;   
+        font-weight: none;
+        background-image: url(../imagenes/bienvenidohome.jpg);        
+}
+
+/* Fin Cabecera*/
+/*Inicio bienvenida*/
+
+#bienvenido{
+	background-color:#rgba;
+	width:100%;
+	height:180px;
+	border-top-width: 10px;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-bottom-style: none;
+	border-top-color: #rgba;
+	border-bottom-color: #rgba;        
+}
+
+#headerHome{
+	 background-image: url(../imagenes/plantilla/bienvenidohome.jpg);
+}
+
+#contentBienvenidos{
+ 	background-position: bottom;
+	height:280px;
+	background-repeat:no-repeat;
+}
+#txtBienvenidos{
+	width:400px;
+	padding:0 0 0 40px;
+	font-size: 11px;
+}
+#footerHome{
+	background-color:#fff;
+	height:15px;
+	text-align:center;
+	padding:6px 0;
+}
+#contentLogin{
+            background-color:#ffffff;
+            position: absolute;
+            top:170px;
+            left:55%;
+            width:323px;
+            height:220px;
+}
+
+/*Fin Bienvenida */
+
+/*Tablas*/
+
+.frmBox{
+	width:3px;
+	background:#fff;
+	padding:3px 0;
+	border-top-width: 1px;
+	border-bottom-width: 5px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #99CCF2;
+	border-bottom-color: #99CCF2;
+}
+
+.frmBoxContent{
+	padding:10px;
+}
+
+.frmBoxContent2{
+	text-align:center;
+	padding:2px 4px;
+	font:bold 10px Geneva, Arial, Helvetica, sans-serif;
+	color:#000;
+}
+
+.frmBoxContent input, .frmBoxContent textarea, .frmBoxContent select, select#dpUnidades {
+	border:solid 1px #d5d6d8;
+	margin:0px 3px;
+	padding:0px;
+	font:normal 12px Geneva, Arial, Helvetica, sans-serif;
+	
+}
+
+div#contentLogin .txtInput{
+	border:solid 1px #a0a0a0;
+	margin:0;
+	padding:0 10px;
+	font:normal 12px Geneva, Arial, Helvetica, sans-serif;
+	background:#FFFFFF;
+}
+
+.frmBoxContent td{
+	padding:2px;
+}
+
+.boxFormTable{
+	border:solid 1px #99CCF2;
+	border-top:none;
+}
+
+.boxFormTable2{
+	font:normal 12px Geneva, Arial, Helvetica, sans-serif;
+	border:solid 1px #99CCF2;
+	padding:3px 6px;
+	border-top:solid 1px #99CCF2;
+	background-repeat: no-repeat;
+}
+
+.frmBoxTitle{
+	padding:3px 6px;
+	font:bold 13px Geneva, Arial, Helvetica, sans-serif;
+	border-bottom:solid 1px #99CCF2;
+	border-left:solid 1px #99CCF2;
+	border-top:solid 1px #99CCF2;
+	color:white;
+	//background-color: #DBEDFB;
+        background-color: #2a6496;  
+}
+
+.frmBoxTitle2{
+	padding:3px 4px;
+	font:bold 11px Geneva, Arial, Helvetica, sans-serif;
+	text-align:center;
+	font-variant:small-caps;
+	border-bottom:solid 1px #99CCF2;
+	border-left:solid 1px #99CCF2;
+	border-right:solid 1px #99CCF2;
+	border-top:solid 1px #99CCF2;
+	color:#06C;
+}
+
+.frmBoxTitle3{
+	padding:3px 4px;
+	font:bold 11px Geneva, Arial, Helvetica, sans-serif;
+	text-align:left;
+	font-variant:small-caps;
+	border-bottom:solid 1px  #99CCF2;
+	border-left:solid 1px #99CCF2;
+	border-right:solid 1px #99CCF2;
+	border-top:solid 1px #99CCF2;
+	color:#06C;
+        }
+
+.frmBoxTitle3 td p{
+    margin: auto;
+    font:bold 10px Geneva, Arial, Helvetica, sans-serif;
+    line-height:40px;
+    padding:5px 4px;
+    background-color:#CFE9FC;
+    color:black;
+}
+
+.detalle {
+    margin: auto;
+    font: 10px Geneva, Arial, Helvetica, sans-serif;
+    padding:5px 4px;
+    color:black;
+}
+
+
+.detHeaderSection{
+	padding:0px 6px;
+	font:normal 12px Geneva, Arial, Helvetica, sans-serif;
+	//color:#5D5C60;
+        color: white;
+	text-transform: inherit;
+	border-bottom:solid 1px #99CCF2;
+	text-align:center;	
+        background-color :#2a6496;
+}
+
+.detBlock{
+	font:normal 11px Geneva, Arial, Helvetica, sans-serif;
+	color:#666;
+	text-align: left;
+}
+
+.detContentSection{
+	border-bottom:solid 1px #99CCF2;
+	border-left:solid 1px #99CCF2;
+	border-right:solid 1px #99CCF2;
+	border-top:solid 1px #99CCF2;
+}
+table.detContentSection td{
+	padding:3px 5px;
+	border:solid 1px #99CCF2;
+}
+
+table.detContentSection table{
+	margin:10px 5px;
+	}
+		
+/* Fin Tabla */	
+/*Inicio Tabs Menu Section*/
+
+.nav-tabss {
+	border-bottom-width: 0px;
+	border-bottom-style: inset;
+	border-bottom-color: #ddd;
+        //color: #2a6496;
+        color: white;
+        background-color:#rgba;
+     }
+.nav-tabss > li {
+	float: left;
+	margin-bottom: -1px;
+        background-color:#2a6496;
+}
+.nav-tabss > li > a {
+	margin-right: 2px;
+	line-height: 1.42857;
+	border-radius: 4px 4px 0 0;
+	color:#FFF;
+        border-bottom-width: 1px;
+	background-image: url(../imagenes/plantilla/tabOff.png);
+	margin-bottom: 0px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.nav-tabmenu{
+	background-color:#2a6496;
+	height: 10px;
+	color: #FFF;
+	}
+
+.nav-menu{
+	background-color:#2a6496;
+        color: #FFF;
+	text-decoration: underline;
+	font-size: 12px;
+	height: 20px;
+	padding-bottom: 10px;
+	}
+
+.nav-menu a {
+	color: #FFF;
+	text-decoration: none;
+	font-size: 11px;
+	cursor: pointer;
+	text-decoration:none;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;	
+	}
+	
+.nav-menu a:hover {
+	border-top-width: -1px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;	
+	}
+
+
+ 
+ .nav-tabss > li > a:hover {
+	font-weight: bold;
+	color: #CFE9FC;           
+         background-color:#2a6496;
+}
+.nav-tabss > li.active > a,
+.nav-tabss > li.active > a:hover,
+.nav-tabss > li.active > a:focus {
+	color: #FFF;
+	cursor: pointer;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.nav-tabss.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+  }
+ 
+.nav-tabss.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+ 
+}
+.nav-tabss.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;  
+  background-color:#2a6496;
+}
+ 
+.nav-tabss.nav-justified > li > a {
+	margin-right: 0;
+	border-radius: 4px;
+	background-color:#2a6496;
+}
+.nav-tabss.nav-justified > .active > a,
+.nav-tabss.nav-justified > .active > a:hover,
+.nav-tabss.nav-justified > .active > a:focus {
+	color: #FFF;       
+}
+ 
+/*fin  Tabs Menu */	
+
+.formRequerido{
+	font:normal 10px Arial, Helvetica, sans-serif;
+	color:#676465;
+	padding:5px 0 0 30px;
+}
+
+ 
+ .links {
+    font: 11px Geneva,Arial,Helvetica,sans-serif;
+    color: #FFF;
+    text-decoration: underline;
+    background-repeat: no-repeat;
+    padding: 0px 0px 4px 20px;
+    margin: 0px 15px;
+}
+
+.frmBoton{
+	background-image: url(../imagenes/plantilla/boton.png);
+        border-top-width: -1px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 13px;
+	padding-right: 10px;
+	padding-left: 10px;         
+        font-weight: bold;
+        color:#CFE9FC;        
+	border-radius: 4px 4px 4px 4px;
+       	}
+	
+ .frmBoton:hover{
+	background-image: url(../imagenes/plantilla/botonHover.png);
+        border-top-width: -1px;
+	color: #FFF;       
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;	
+        color: #CFE9FC;               
+	border-radius: 4px 4px 4px 4px;       
+  }
+    
+/* The CSS */
+select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#000;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+label {position:relative}
+label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    border-bottom:1px solid #99CCF2;
+    position:absolute;
+    pointer-events:none;
+}
+label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}  
+
+.tituloTd{
+	padding:3px 4px;
+	font:bold 11px Geneva, Arial, Helvetica, sans-serif;
+	text-align:left;
+	font-variant:small-caps;
+	color:#06C;
+}
+
+.tituloTd1{
+	padding:3px 4px;
+	font: 11px Geneva, Arial, Helvetica, sans-serif;
+	text-align:left;
+	font-variant:small-caps;
+	color:#06C;
+}
+
+.tituloTd2{
+	padding:3px 4px;
+	font: bold 11px Geneva, Arial, Helvetica, sans-serif;
+	text-align:left;
+	font-variant:small-caps;
+	color:#2a6496;
+}
+
+.tituloTd3{
+	padding:3px 4px;
+	font: bold 14px Geneva, Arial, Helvetica, sans-serif;
+	text-align:left;
+	font-variant:small-caps;
+	color:#2a6496;
+}
+
+.campoNumero
+{
+	font: Arial, Helvetica, sans-serif;
+	color:#000000;
+	text-align:right;
+}
+
+/*para todos los input text*/
+input[disabled], input[readonly] , textarea[readonly], textarea[disabled]{
+    background-color: #eee;
+    cursor: not-allowed;
+    opacity: 1;
+}

@@ -1,0 +1,500 @@
+#menuVerticalDiv,
+#menuVerticalDiv ul,
+#menuVerticalDiv li,
+
+#menuVerticalDiv a {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 3px;
+    border: 0;
+    list-style: none;
+    font-weight: normal;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 16px; /*1em*/
+    position: relative;
+}
+#menuVerticalDiv {
+    width: 265px; /*190px*/
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    border-bottom-width: 1px;
+    border-bottom-style: groove;
+    border-bottom-color: #CCC;
+}
+#menuVerticalDiv a {
+    line-height: 1.3;
+}
+
+
+#menuVerticalDiv > ul > li {
+   // background-color: #07FD50;
+    background-color:#0059b3; /*success #398439;*/
+}
+#menuVerticalDiv > ul > li:hover {
+    //background-color: #367EF5; 
+    text-shadow: #040404; //añadido
+    font-weight: bold;
+    background-color: #337ab7;   /*success #398439;*/
+}
+#menuVerticalDiv > ul > li > a {
+    font-size: .9em; /*.9*/
+    display: block;
+    background: url(../imagenes/menu/padre.png) top left repeat;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px red;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #4485F6;
+    border-right-color: #4485F6;
+    border-bottom-color: #4485F6;
+    border-left-color: #4485F6;
+}
+#menuVerticalDiv > ul > li > a > span {
+    display: block;
+    padding: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#menuVerticalDiv > ul > li > ul > li > a > span {
+    display: block;
+    padding: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#menuVerticalDiv > ul > li > ul > li > ul > li > a > span {
+    display: block;
+    padding: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#menuVerticalDiv > ul > li > ul > li > ul > li > ul > li > a > span {
+    display: block;
+    padding: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#menuVerticalDiv > ul > li > ul > li > ul > li > ul > li > ul > li > a > span {
+    display: block;
+    padding: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#menuVerticalDiv > ul > li  > ul > li > ul > li > ul > li > ul > li > ul > li > a > span {
+    display: block;
+    padding: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+#menuVerticalDiv > ul > li  > ul > li  > ul > li > ul > li > ul > li > ul > li > ul > li > a > span {
+    display: block;
+    padding: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#menuVerticalDiv > ul > li > ul > li  > ul > li  > ul > li > ul > li > ul > li > ul > li > ul > li > a > span {
+    display: block;
+    padding: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#menuVerticalDiv > ul > li > ul > li  > ul > li  > ul > li  > ul > li > ul > li > ul > li > ul > li > ul > li > a > span {
+    display: block;
+    padding: 3px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#menuVerticalDiv  ul  li  a:hover {
+    text-decoration: none;
+    text-shadow: #040404;
+    background-color: #A9BCF5;
+}
+#menuVerticalDiv  ul  li.active {
+    border-bottom: none;
+}
+
+/*n1*/
+#menuVerticalDiv > ul > li.has-sub1 > a span {
+    background: url(../imagenes/menu/icon_menos.png) 96% center no-repeat;
+}
+#menuVerticalDiv > ul > li.has-sub1.active > a span {
+    background: url(../imagenes/menu/icon_mas.png) 96% center no-repeat;
+}
+/*n2*/
+#menuVerticalDiv > ul > li> ul > li.has-sub2 > a span {
+    background: url(../imagenes/menu/icon_mas.png) 96% center no-repeat; 
+}
+#menuVerticalDiv > ul > li> ul > li.has-sub2.active > a span {
+    background: url(../imagenes/menu/icon_menos.png) 96% center no-repeat; 
+}
+
+/*n3*/
+#menuVerticalDiv > ul > li> ul > li> ul > li.has-sub3 > a span {
+    background: url(../imagenes/menu/icon_mas.png) 96% center no-repeat; 
+}
+#menuVerticalDiv > ul > li> ul > li> ul > li.has-sub3.active > a span {
+    background: url(../imagenes/menu/icon_menos.png) 96% center no-repeat; 
+}
+/*n4*/
+#menuVerticalDiv > ul > li> ul > li> ul > li> ul > li.has-sub4 > a span {
+    background: url(../imagenes/menu/icon_mas.png) 96% center no-repeat; 
+}
+#menuVerticalDiv > ul > li> ul > li> ul > li> ul > li.has-sub4.active > a span {
+    background: url(../imagenes/menu/icon_menos.png) 96% center no-repeat; 
+}
+/*n5*/
+#menuVerticalDiv > ul > li> ul > li> ul > li> ul > li> ul > li.has-sub5 > a span {
+    background: url(../imagenes/menu/icon_mas.png) 96% center no-repeat; 
+}
+#menuVerticalDiv > ul > li> ul > li> ul > li> ul > li> ul > li.has-sub5.active > a span {
+    background: url(../imagenes/menu/icon_menos.png) 96% center no-repeat; 
+}
+/*n6*/
+#menuVerticalDiv > ul > li> ul > li> ul > li> ul > li>  ul > li> ul > li.has-sub6 > a span {
+    background: url(../imagenes/menu/icon_mas.png) 96% center no-repeat; 
+}
+#menuVerticalDiv > ul > li> ul > li> ul > li> ul > li>  ul > li> ul > li.has-sub6.active > a span {
+    background: url(../imagenes/menu/icon_menos.png) 96% center no-repeat; 
+}
+/*n7*/
+#menuVerticalDiv > ul > li> ul > li> ul > li> ul > li> ul > li>  ul > li> ul > li.has-sub7 > a span {
+    background: url(../imagenes/menu/icon_mas.png) 96% center no-repeat; 
+}
+#menuVerticalDiv > ul > li> ul > li> ul > li> ul > li> ul > li>  ul > li> ul > li.has-sub7.active > a span {
+    background: url(../imagenes/menu/icon_menos.png) 96% center no-repeat; 
+}
+/*n8*/
+#menuVerticalDiv > ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li.has-sub8 > a span {
+    background: url(../imagenes/menu/icon_mas.png) 96% center no-repeat; 
+}
+#menuVerticalDiv > ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li.has-sub8.active > a span {
+    background: url(../imagenes/menu/icon_menos.png) 96% center no-repeat; 
+}
+/*n9*/
+#menuVerticalDiv > ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li.has-sub9 > a span {
+    background: url(../imagenes/menu/icon_mas.png) 96% center no-repeat; 
+}
+#menuVerticalDiv > ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li.has-sub9.active > a span {
+    background: url(../imagenes/menu/icon_menos.png) 96% center no-repeat; 
+}
+/*n10*/
+#menuVerticalDiv > ul > li > ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li.has-sub10 > a span {
+    background: url(../imagenes/menu/icon_mas.png) 96% center no-repeat; 
+}
+#menuVerticalDiv > ul > li > ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li> ul > li.has-sub10.active > a span {
+    background: url(../imagenes/menu/icon_menos.png) 96% center no-repeat; 
+}
+
+#menuVerticalDiv ul ul {
+    display: block;
+    background: #fff;
+
+}
+#menuVerticalDiv ul ul ul{
+    display: block;
+    background: #fff;
+    border-right: 1px ridge #a2a194;
+    border-left: 1px ridge #a2a194;
+}
+#menuVerticalDiv ul ul ul ul{
+    display: block;
+    background: #fff;
+    border-right: 1px ridge #a2a194;
+    border-left: 1px ridge #a2a194;
+}
+#menuVerticalDiv ul ul ul ul ul{
+    display: block;
+    background: #fff;
+    border-right: 1px ridge #a2a194;
+    border-left: 1px ridge #a2a194;
+}
+
+#menuVerticalDiv ul ul ul ul ul ul {
+    display: block;
+    background: #fff;
+    border-right: 1px solid #a2a194;
+    border-left: 1px solid #a2a194;
+}
+
+#menuVerticalDiv ul ul ul ul ul ul ul{
+    display: block;
+    background: #fff;
+    border-right: 1px solid #a2a194;
+    border-left: 1px solid #a2a194;
+}
+
+#menuVerticalDiv ul ul ul ul ul ul ul ul{
+    display: block;
+    background: #fff;
+    border-right: 1px solid #a2a194;
+    border-left: 1px solid #a2a194;
+}
+#menuVerticalDiv ul ul ul ul ul ul ul ul ul{
+    display: block;
+    background: #fff;
+    border-right: 1px solid #a2a194;
+    border-left: 1px solid #a2a194;
+}
+#menuVerticalDiv ul ul ul ul ul ul ul ul ul ul{
+    display: block;
+    background: #fff;
+    border-right: 1px solid #a2a194;
+    border-left: 1px solid #a2a194;
+}
+
+
+
+#menuVerticalDiv ul ul li {
+    padding: 0;
+    border-bottom: 1px solid #6ca0f9;
+    border-top: none;
+    background:  #337AB7; /*success #398439;*/
+/*    background: -moz-linear-gradient(#E0ECFE 0%, #C4D9FD 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #C4D9FD), color-stop(100%, #C4D9FD));
+    background: -webkit-linear-gradient(#E0ECFE 0%, #C4D9FD 100%);*/
+/*    color: #003399; */
+    color:#ffffff;
+}
+
+#menuVerticalDiv ul ul ul li {
+    padding: 0;
+    border-bottom: 1px solid #F5F5F5;
+    border-top: none;
+    background: #F5F5F5;
+/*    background: -moz-linear-gradient(#F0F0F0 0%, #F5F5F5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F0F0F0), color-stop(100%, #F5F5F5));
+    background: -webkit-linear-gradient(#F0F0F0 0%, #F5F5F510 0%);
+    background: linear-gradient(#F0F0F0 0%, #F5F5F5 100%);*/
+    color: #333333; 
+}
+
+#menuVerticalDiv ul ul ul ul li {
+    padding: 0;
+    border-bottom: 1px solid #DBDBDB;
+    border-top: none;
+    background: #DBDBDB;
+/*    background: -moz-linear-gradient(#EEEEEE 0%, #DBDBDB 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #DBDBDB), color-stop(100%, #DBDBDB));
+    background: -webkit-linear-gradient(#EEEEEE 0%, #DBDBDB 100%);
+    background: linear-gradient(#EEEEEE 0%, #DBDBDB 100%);*/
+    color: #0099CC;
+}
+
+#menuVerticalDiv ul ul ul ul ul li {
+    padding: 0;
+    border-bottom: 1px solid #E8E8E8;
+    border-top: none;
+    background: #E8E8E8;
+/*    background: -moz-linear-gradient(#DDDDDD 0%, #E8E8E8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #DDDDDD), color-stop(100%, #E8E8E8));
+    background: -webkit-linear-gradient(#DDDDDD 0%, #E8E8E8 100%);
+    background: linear-gradient(#DDDDDD 0%, #E8E8E8 100%);*/
+    color: #FF6600;
+}
+
+#menuVerticalDiv ul ul ul ul ul ul li {
+    padding: 0;
+    border-bottom: 1px solid #DBEDFB;
+    border-top: none;
+    background: #DBEDFB;
+/*    background: -moz-linear-gradient(#CBE4FA 0%, #DBEDFB 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #CBE4FA), color-stop(100%, #DBEDFB));
+    background: -webkit-linear-gradient(#CBE4FA 0%, #DBEDFB 100%);
+    background: linear-gradient(#CBE4FA 0%, #DBEDFB 100%);*/
+    color: #0099CC;
+}
+
+#menuVerticalDiv ul ul ul ul ul ul ul li {
+    padding: 0;
+    border-bottom: 1px solid #91C7F2;
+    border-top: none;
+    background: #91C7F2;
+/*    background: -moz-linear-gradient( #9ECDF3 0%, #91C7F2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9ECDF3), color-stop(100%, #91C7F2));
+    background: -webkit-linear-gradient(#9ECDF3 0%, #91C7F2 100%);
+    background: linear-gradient(#9ECDF3 0%, #91C7F2 100%);*/
+    color: #FF3300;
+}
+
+
+#menuVerticalDiv ul ul ul ul ul ul ul ul li {
+    padding: 0;
+    border-bottom: 1px solid #BCBCBC;
+    border-top: none;
+    background: #BCBCBC;
+/*    background: -moz-linear-gradient(#D2D2D2 0%, #BCBCBC 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #D2D2D2), color-stop(100%, #BCBCBC));
+    background: -webkit-linear-gradient(#D2D2D2 0%, #BCBCBC 100%);
+    background: linear-gradient(#D2D2D2 0%, #BCBCBC 100%);*/
+    color: #FF3300;
+}
+
+
+#menuVerticalDiv ul ul ul ul ul ul ul ul ul li {
+    padding: 0;
+    border-bottom: 1px solid #DFDFDF;
+    border-top: none;
+    background: #DFDFDF;
+/*    background: -moz-linear-gradient(#E6E6E6 0%, #DFDFDF 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #E6E6E6), color-stop(100%, #DFDFDF));
+    background: -webkit-linear-gradient(#E6E6E6 0%, #DFDFDF 100%);
+    background: linear-gradient(#E6E6E6 0%, #DFDFDF 100%);*/
+}
+
+
+#menuVerticalDiv ul ul ul ul ul ul ul ul ul ul li {
+    padding: 0;
+    border-bottom: 1px solid #E6E6E6;
+    border-top: none;
+    background: #E6E6E6;
+/*    background: -moz-linear-gradient(#f7f7f7 0%, #E6E6E6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #E6E6E6));
+    background: -webkit-linear-gradient(#f7f7f7 0%, #E6E6E6 100%);
+    background: linear-gradient(#f7f7f7 0%, #E6E6E6 100%);*/
+}
+
+#menuVerticalDiv ul ul a {
+    padding: 10px 10px 10px 15px;
+    display: block;
+    color: #FFFFFF;
+    font-size: .9em; /*.8*/
+    font-weight: normal;
+}
+#menuVerticalDiv ul ul ul a {
+    padding: 10px 10px 10px 15px;
+    display: block;
+    color: #676767;
+    font-size: .9em; /*.8*/
+    font-weight: normal;
+}
+#menuVerticalDiv ul ul ul ul a {
+    padding: 10px 10px 10px 15px;
+    display: block;
+    color: #676767;
+    font-size: .9em; /*.8*/
+    font-weight: normal;
+}
+#menuVerticalDiv ul ul ul ul ul a {
+    padding: 10px 10px 10px 15px;
+    display: block;
+    color: #676767;
+    font-size: .9em; /*.8*/
+    font-weight: normal;
+}
+
+#menuVerticalDiv ul ul a:before {
+
+    position: absolute;
+    left: 10px;
+    color: #e94f31;
+
+}
+
+#menuVerticalDiv ul ul ul a:before {
+
+    position: absolute;
+    left: 10px;
+    color: #e94f31;
+
+}
+#menuVerticalDiv ul ul ul ul a:before {
+
+    position: absolute;
+    left: 10px;
+    color: #e94f31;
+}
+
+#menuVerticalDiv ul ul ul ul ul a:before {
+
+    position: absolute;
+    left: 10px;
+    color: #e94f31;
+}
+
+#menuVerticalDiv ul ul ul ul ul ul  a:before {
+
+    position: absolute;
+    left: 10px;
+    color: #e94f31;
+}
+
+#menuVerticalDiv ul ul ul ul ul ul ul a:before {
+    content: '\00BB';
+    position: absolute;
+    left: 10px;
+    color: #e94f31;
+}
+
+#menuVerticalDiv ul ul ul ul ul ul ul ul a:before {
+    content: '\00BB';
+    position: absolute;
+    left: 10px;
+    color: #e94f31;
+}
+
+#menuVerticalDiv ul ul ul ul ul ul ul ul ul a:before {
+    content: '\00BB';
+    position: absolute;
+    left: 10px;
+    color: #e94f31;
+}
+
+#menuVerticalDiv ul ul ul ul ul ul ul ul ul ul a:before {
+    content: '\00BB';
+    position: absolute;
+    left: 10px;
+    color: #e94f31;
+}
+
+
+
+#menuVerticalDiv ul ul a:hover {
+    /*color: #06C;*/
+    color:#040404;
+    text-shadow: #040404;
+   /*font-weight: bold;*/
+}
+
+#menuVerticalDiv ul ul ul a:hover {
+    color: #040404;
+    text-shadow: #040404;
+   /* font-weight: bold;*/
+}
+
+#menuVerticalDiv ul ul ul ul a:hover {
+    color: #040404;
+    text-shadow: #040404;
+   /* font-weight: bold;*/
+}
+
+#menuVerticalDiv ul ul ul ul ul a:hover {
+    color:#040404;
+    text-shadow: #040404;
+    /*font-weight: bold;*/
+}

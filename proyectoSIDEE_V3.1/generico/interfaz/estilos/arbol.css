@@ -1,0 +1,72 @@
+ .arbol {
+	right: 5px;
+	letter-spacing: normal;
+}
+.arbol ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+.arbol li a {
+    line-height: 18px;
+}
+.arbol > ul > li > a {
+	color: #999;
+	display: block;
+	font-weight: normal;
+	position: relative;
+	text-decoration: none;
+}
+.arbol li.parent > a {
+    padding: 0 0 0 18px;
+	background-position: 15px center;
+}
+ 
+ 
+.arbol li.parent > a:before {
+	background-image: url(../imagenes/arbol/menosmas.png);
+	background-position: 15px center;
+	content: "";
+	display: block;
+	height: 11px;
+	left: 0;
+	position: absolute;
+	top: 2px;
+	vertical-align: middle;
+	width: 13px;
+}
+
+.arbol ul li.active > a:before {
+	background-position: 0 center;
+}
+
+
+.arbol ul li ul {
+    border-left: 1px solid #D9DADB;
+    display: block;
+    margin: 0 0 0 12px;
+    overflow: hidden;
+    padding: 0 0 0 15px;
+}
+.arbol ul li ul li {
+    position: relative;
+}
+.arbol ul li ul li:before {
+    border-bottom: 1px dashed #E2E2E3;
+    content: "";
+    left: -20px;
+    position: absolute;
+    top: 12px;
+    width: 15px;
+}
+.arbolito{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	clip: rect(0px,0px,0px,0px);	
+	}
+		
+ 
+ 

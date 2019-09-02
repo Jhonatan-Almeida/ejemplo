@@ -1,0 +1,43 @@
+
+/* Para que funcione el ajax */
+
+#divIzq, #divDer {width:296px; }
+
+#divDer { float:left; position:relative; }
+
+/* 
+	Hasta 3 divBuscars (3 ajax) dentro de una misma pagina html
+*/
+#divBuscar,#divBuscar1,#divBuscar2,#divBuscar3,#divBuscar4,#divBuscar5
+{
+	position:absolute;
+	width:500px;
+	max-height: 10em;	   	 
+	height: auto !important;
+	height: 10em;
+	overflow: auto;
+	background-color:#FFFFFF; 
+	border:1px solid; border-color:#808080;
+	z-index:1;
+	top:23px;
+	left:3px;
+	display:none;
+	font:normal 12px Verdana, Arial, Helvetica, sans-serif;
+	color:#808080;
+	text-align:left;
+	line-height: 200%;
+
+}
+
+.resaltado
+{
+	background-color:#F3F7FD; color:#808080;
+	cursor:pointer;
+	border:1px solid; border-color:#BBD8FB;
+
+}
+
+.normal
+{
+	background-color:#FFFFFF; color:#808080;
+}

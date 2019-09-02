@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale=1" charset="utf-8">
+    <link rel="stylesheet" href="js/jquery.mobile-1.4.4.css">
+    <link rel="stylesheet" href="generico/interfaz/estilos/jquery-ui.css">
+<!--    <link rel="stylesheet" href="generico/interfaz/estilos/acordeon.css">-->
+    <style>
+          body {
+  background: #222;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: .9em;
+}
+h3 {
+  background:#285e8e;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2em;
+}
+.acordeon {
+  width: 70%;
+  margin: auto;
+}
+.acordeon__titulo {
+  background-color: #1ea9ff;
+  background: #0431B4;
+  line-height: 2.8;
+  padding: 0 1em;
+  font-size: 1.2em;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 -1px 0 0 #000 inset;
+  text-shadow: 1px 1px #000;
+  cursor: pointer;
+  border-radius: 10px 10px 10px 10px;
+}
+.acordeon__contenido {
+  margin: 0;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1em 1em 1em;
+  #divMensaje{
+    background-color: #f41600; 
+    background: #0431B4;
+    font-size: 1.2em;
+    border-radius: 5px 5px 5px 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+    </style>
+    <script src="generico/librerias/js/jquery-1.12.4.js"></script>
+    <script src="generico/librerias/js/jquery-ui.js"></script>
+    <script src="js/jquery.mobile-1.4.4.js"></script>
+    <script src="js/fdd.js" type="text/javascript"></script>
+    <script src="js/reporteUno.js" type="text/javascript"></script>
+    <script src="generico/librerias/highcharts/highcharts.js"></script>
+    <script src="generico/librerias/highcharts/modules/data.js"></script>
+    <script src="generico/librerias/highcharts/modules/drilldown.js"></script>
+   <body>
+        
+        <div data-role="page" id="paginaInicio" >
+            <div style="background: scroll"  data-role="header">
+                    <img width="100%" height="100%" src="generico/interfaz/imagenes/emapg.png">
+                <!--<img width="100%" height="100%" src="generico/interfaz/imagenes/banner.png">-->
+            </div>
+            <div data-role="content" style="background-color:#1e415a">
+                    <a onclick="cambiarPagina('paginaRegistro')" class="ui-btn"><img width="15" height="15" src="images/icons-png/grid-black.png">Ingresar</a>
+                    <a onclick="cambiarPagina('paginaReportes')" class="ui-btn"><img width="20" height="20" src="images/icons-png/eye-black.png">Reportes</a>
+                   <!-- <a onclick="cambiarPagina('paginalistaHotel')" class="ui-btn"><img width="20" height="20" src="images/icons-png/user-black.png">Registrate</a>-->
+            </div>
+            <div data-role="footer">
+                <p align="center" style="font-size:8px; font: italic"><img width="30%" height="20%" src="generico/interfaz/imagenes/clickdata.png"></p>
+            </div>
+        </div>
+
+
+        <div data-role="page" id="paginaRegistro">
+            <div style="background: scroll" data-role="header">
+                    <img width="100%" height="100%" src="generico/interfaz/imagenes/bannerSIEPK.png">
+                <!--<img width="100%" height="100%" src="generico/interfaz/imagenes/banner.png">-->
+            </div>
+            <div data-role="content">
+                <form id="formdata" name="formdata" action="" method="post">
+                    <div class="ui-field-contain">
+                        <div id="mensajeForUp" style="background-color: #f41600;font-size: 1.2em;border-radius: 5px 5px 5px 5px;color: rgba(255, 255, 255, 0.7);"></div>
+                        <label id="provincia" for="provincia">Provincia:</label>
+                        <select id="sel_prov" onchange="cargarCanton(jsObj)">
+                            <option value="0">Elija una opción</option>
+                            <option value="3">Bolivar</option>
+                        </select>
+                        <hr>
+                        <label id="lblCanton" for="lblCanton">Canton:</label>
+                        <div id="divCanton"></div>
+                        <hr>
+                        <label id="lblParroquia" for="lblParroquia">Parroquia:</label>
+                        <div id="divParroquia"></div>
+                        <hr>
+                        <label id="provincia" for="provicia">Recinto:</label>
+                        <div id="divRecinto"></div>
+                        <hr>
+                        <label id="junta" for="junta">Junta:</label>
+                        <div id="divJunta"></div>
+                        <hr>
+                        <label id="junta" for="junta">Dignidad:</label>
+                        <div id="divDignidad"></div>
+                        <hr>
+                        <div id="formularioDatos"></div>
+                        <div id="mensajeForDown" style="background-color: #f41600;font-size: 1.2em;border-radius: 5px 5px 5px 5px;color: rgba(255, 255, 255, 0.7);"></div>
+                    </div>
+                    <a id="btnGuardar" class="ui-btn">Guardar</a>
+                    <a onclick="cambiarPagina('paginaSincronizar')" class="ui-btn">Sincronizar</a>
+                    <a onclick="cambiarPagina('paginaInicio')" class="ui-btn">Volver</a>
+                </form>
+            </div>
+            <div data-role="footer">
+                <p align="center">Registro de Usuario</p>
+                <p align="center" style="font-size:8px; font: italic"><img width="30%" height="20%" src="generico/interfaz/imagenes/clickdata.png"></p>
+            </div>
+        </div>
+        <div data-role="page" id="paginaGraficos">
+            <div style="background: scroll" data-role="header">
+                    <img width="100%" height="100%" src="generico/interfaz/imagenes/bannerSIEPK.png">
+                <!--<img width="100%" height="100%" src="generico/interfaz/imagenes/banner.png">-->
+            </div>
+            <div data-role="content">
+                <form id="formdataRepo" name="formdataRepo" action="" method="post">
+                    <label id="provincia" for="provincia">Provincia:</label>
+                        <select id="sel_prov_reporte" onchange="cargarCantonReporte(jsObjr)">
+                            <option value="0">Elija una opción</option>
+                            <option value="3">Bolivar</option>
+                        </select>
+                        <hr>
+                        <b>Canton:</b><div id="divCantonReporte" ></div>
+                        <hr>
+                        <b>Dignidad:</b><div id="divDignidadReporte"></div>
+                        <hr>
+                    <div class="ui-field-contain" style="aling:center">
+                        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto">
+                        </div>
+                    </div>
+                    <a onclick="cambiarPagina('paginaReportes')" class="ui-btn">Volver</a>
+                </form> 
+            </div>
+            <div data-role="footer">
+                <p align="center">Reporte por Canton</p>
+                <p align="center" style="font-size:8px; font: italic"><img width="30%" height="20%" src="generico/interfaz/imagenes/clickdata.png"></p>
+            </div>
+        </div>
+        <div data-role="page" id="paginaGraficosGeneral">
+            <div style="background: scroll" data-role="header">
+                    <img width="100%" height="100%" src="generico/interfaz/imagenes/bannerSIEPK.png">
+                <!--<img width="100%" height="100%" src="generico/interfaz/imagenes/banner.png">-->
+            </div>
+            <div data-role="content">
+                <form id="formdataRepo" name="formdataRepo" action="" method="post">
+                    <select id="sel_dignidad_reporte_general" onchange="cargarGraficaGeneral()">
+                            <option value="0">Elija una opción</option>
+                            <option value="369">Prefecto o Viceprefecto(a)</option>
+                    </select>
+                    <div class="ui-field-contain" style="aling:center">
+                        <div id="containerGeneral" style="min-width: 310px; height: 400px; margin: 0 auto">
+                        </div>
+                    </div>
+                    <a onclick="cambiarPagina('paginaReportes')" class="ui-btn">Volver</a>
+                </form> 
+            </div>
+            <div data-role="footer">
+                <p align="center">Reporte General</p>
+                <p align="center" style="font-size:8px; font: italic"><img width="30%" height="20%" src="generico/interfaz/imagenes/clickdata.png"></p>
+            </div>
+        </div>
+        <div data-role="page" id="paginaReportes">
+            <div style="background: scroll" data-role="header">
+                    <img width="100%" height="100%" src="generico/interfaz/imagenes/bannerSIEPK.png">
+                <!--<img width="100%" height="100%" src="generico/interfaz/imagenes/banner.png">-->
+            </div>
+            <div data-role="content">
+                <form>
+                    <div class="ui-field-contain">
+                        <a  onclick="cambiarPagina('paginaGraficos')" class="ui-btn"><img width="40" height="40" src="generico/interfaz/imagenes/lista.png"><center>Reporte por Canton</center></a>
+                    	<a  onclick="cambiarPagina('paginaGraficosGeneral')" class="ui-btn"><img width="40" height="40" src="generico/interfaz/imagenes/lista.png"><center>Reporte General</center></a>
+                    </div>
+                    <a onclick="cambiarPagina('paginaInicio')" class="ui-btn">Volver</a>
+                </form>
+            </div>
+            <div data-role="footer">
+                <p align="center">Reportes</p>
+                <p align="center" style="font-size:8px; font: italic"><img width="30%" height="20%" src="generico/interfaz/imagenes/clickdata.png"></p>
+            </div>
+        </div>
+        <div data-role="page" id="paginaSincronizar">
+            <div style="background: scroll" data-role="header">
+                    <img width="100%" height="100%" src="generico/interfaz/imagenes/bannerSIEPK.png">
+                <!--<img width="100%" height="100%" src="generico/interfaz/imagenes/banner.png">-->
+            </div>
+            <div data-role="content">
+                <form>
+                    <div class="ui-field-contain">
+                        <div id="divMensaje" style="background-color: #f41600;font-size: 1.2em;border-radius: 5px 5px 5px 5px;color: rgba(255, 255, 255, 0.7);"></div>
+                        <div id='divEsperaup'></div>
+                        <h3 id="consulta">Lista de Registros Ingresados</h3><br>
+                        <div id='datosSincronizacion'></div>
+                        <div id='divEsperadown'></div>
+                    </div>
+                    <a id="btnSincronizar" class="ui-btn">Sincronizar</a>
+                    <a onclick="cambiarPagina('paginaRegistro')" class="ui-btn">Volver</a>
+                </form>
+            </div>
+            <div data-role="footer">
+                <p align="center">Lista Sincronizar</p>
+                <p align="center" style="font-size:8px; font: italic"><img width="30%" height="20%" src="generico/interfaz/imagenes/clickdata.png"></p>
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
